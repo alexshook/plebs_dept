@@ -1,6 +1,4 @@
-console.log('loaded bro!');
-
-fetch('http://localhost:5000/').then(function(response) {
+fetch('https://calm-beach-60805.herokuapp.com/').then(function(response) {
   if(response.ok) {
     return response.json();
   }
