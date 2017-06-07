@@ -8,6 +8,12 @@ fetch('http://localhost:5000/').then(function(response) {
   var products = data["products"];
   var source = document.getElementById("template").innerHTML;
    var template = Handlebars.compile(source);  
-  console.log({products: products});
   document.getElementById("products").innerHTML = template({products: products});
+}).then(function() {
+  var elem = document.querySelector('.grid');
+  var msnry = new Masonry( elem, {
+    itemSelector: '.grid-item',
+    gutter: 10,
+    columnWidth: 200
+  });
 });

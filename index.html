@@ -4,25 +4,26 @@
   <meta charset="UTF-8">
   <title>Fashion Barbarian</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
+  <script src="vendor/js/masonry.pkgd.min.js"></script>
   <script type="text/javascript" src="js/index.js"></script>
   <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="vendor/css/normalize.css">
-  <link rel="stylesheet" href="vendor/css/skeleton.css">
 </head>
 <body>
-  <div class="container u-full-width">  
-    <div id="products"></div>
+  <div class="container slim centered">
+    <div class="right-align"><a href="https://github.com/alexshook/fashion_barbarian">about</a></div>
+    <h1 class="centered">Fashion Barbarian</h1>
 
+    <div id="products"></div>
     <script id="template" type="text/x-handlebars-template">
-      <div class="row u-full-width">
+      <div class="grid">
       {{#each products}}
-        <div class="four columns u-max-full-width">
-          <img src="{{image.sizes.XLarge.url}}">
-          <div class="name"><a href="{{clickUrl}}">{{brandedName}}</a></div
-          <div class="price">{{#if salePrice}} ${{salePrice}} on sale, originally{{/if}} ${{price}}</li><div>
+        <div class="grid-item">
+          <img src="{{image.sizes.Large.url}}" height="{{image.sizes.Large.actualHeight}}">
+          <div class="name"><a href="{{clickUrl}}">{{brandedName}}</a></div>
+          <div class="price">{{#if salePrice}} ${{salePrice}} on sale, originally{{/if}} ${{price}}</div>
         </div>
-      </div>
       {{/each}}
+      </div>
     </script>
   </div>
 </body>
