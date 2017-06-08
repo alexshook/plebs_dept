@@ -55,3 +55,52 @@ img {
   border: 2px solid #fda6b3;
   border-radius: 10px;
 }
+
+.products {
+  margin: 0 auto;
+}
+
+/* media queries */
+
+@media only screen and (min-width: 400px) {
+  .slim {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 550px) {
+  .slim {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .slim {
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .slim {
+    width: 65%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .slim {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .slim {
+    width: 40%;
+  }
+}
+
