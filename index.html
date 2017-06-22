@@ -20,7 +20,7 @@
         <div class="grid-item">
           <img src="{{image.sizes.Large.url}}" height="{{image.sizes.Large.actualHeight}}">
           <div class="name"><a href="{{clickUrl}}">{{brandedName}}</a></div>
-          <div class="price">{{#if salePrice}} ${{salePrice}} on sale, originally{{/if}} ${{price}}</div>
+          <div class="price">{{#if salePriceLabel}} {{salePriceLabel}} on sale, originally{{/if}} {{priceLabel}}</div>
         </div>
       {{/each}}
       </div>
