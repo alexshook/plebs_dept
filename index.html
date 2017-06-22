@@ -18,7 +18,7 @@
       <div class="grid">
       {{#each products}}
         <div class="grid-item">
-          <img src="{{image.sizes.Large.url}}" height="{{image.sizes.Large.actualHeight}}">
+          <a href="{{clickUrl}}"><img src="{{image.sizes.Large.url}}" height="{{image.sizes.Large.actualHeight}}"></a>
           <div class="name"><a href="{{clickUrl}}">{{brandedName}}</a></div>
           <div class="price">{{#if salePriceLabel}} {{salePriceLabel}} on sale, originally{{/if}} {{priceLabel}}</div>
         </div>
