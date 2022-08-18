@@ -1,1 +1,1 @@
-Front end for the [Fashion Barbarian Clojure API](https://github.com/alexshook/fashion_barbarian). 
+Front end for the [Plebs Dept. API](https://github.com/alexshook/plebs_dept_api).
